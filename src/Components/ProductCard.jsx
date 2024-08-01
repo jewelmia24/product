@@ -2,9 +2,26 @@
 
 const ProductCard = ({ product,setCarts}) => {
   const {Img,ProductName,Description,Price} = product
+  // const handleAddToCart = () => {
+  //   setCarts((prevCarts) => [...prevCarts, product]);
+  // };
+
+
   const handleAddToCart = () => {
-    setCarts((prevCarts) => [...prevCarts, product]);
+    setCarts((prevCarts) => {
+      const productInCart = prevCarts.find((item) => item.id === product.id);
+      if (productInCart) {
+        return prevCarts.map((item) =>
+          item.id === product.id
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
+        );
+      } else {
+        return [...prevCarts, { ...product, quantity: 1 }];
+      }
+    });
   };
+
   return (
     <div>
       <div className="card bg-base-100 shadow-xl">

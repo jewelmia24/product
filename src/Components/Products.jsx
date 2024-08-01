@@ -10,30 +10,35 @@ const Products = ({setCarts}) => {
 
     const products = [
         {
+          id:1,
           ProductName: "Smartphone X1",
           Price: 699.99,
           Img: img2,
           Description: "The latest Smartphone X1 with a stunning display and high-performance processor."
         },
         {
+          id:2,
           ProductName: "Wireless Headphones Pro",
           Price: 199.99,
           Img: img1,
           Description: "Experience exceptional sound quality with these wireless  ."
         },
         {
+          id:3,
           ProductName: "4K Ultra HD TV",
           Price: 999.99,
           Img: img3,
           Description: "Enjoy crystal-clear visuals and vibrant colors with our 4K Ultra HD TV."
         },
         {
+          id:4,
           ProductName: "Smartwatch Series 7",
           Price: 299.99,
           Img: img4,
           Description: "Stay connected and track your fitness with the latest Smartwatch Series 7."
         },
         {
+          id:5,
           ProductName: "phone-x2",
           Price: 79.99,
           Img: img5,
