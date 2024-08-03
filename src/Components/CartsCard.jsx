@@ -1,6 +1,5 @@
 
 const CartsCard = ({cart}) => {
-    console.log(cart)
     const {ProductName,Img,quantity
     }=cart
     return (

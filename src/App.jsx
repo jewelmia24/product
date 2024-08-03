@@ -6,8 +6,6 @@ import CartsCard from "./Components/CartsCard";
 const App = () => {
   const [carts, setCarts] = useState([]);
   const [cartBtn, setCartBtn] = useState(true);
-
-  console.log(carts);
   return (
     <div className="max-w-screen-xl mx-auto mt-2">
       <Navbar setCartBtn={setCartBtn} cartBtn={cartBtn} carts={carts}></Navbar>
